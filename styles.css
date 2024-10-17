@@ -1,0 +1,87 @@
+body {
+    background-color: #f0f4f8; /* Light background color to make the cards stand out */
+    font-family: 'Arial, sans-serif';
+    color: #333;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+  }
+  
+  .daniel-card {
+    grid-column: span 6;
+  }
+  
+  .jonathan-card {
+    grid-column: span 3;
+  }
+  
+  .kira-card {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+  
+  .jeanette-card {
+    grid-column: span 3;
+  }
+  
+  .patrick-card {
+    grid-column: span 6;
+  }
+  
+  .testimonial-card {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-purple {
+    background-color: #891bea; /* Purple background for specific cards */
+    color: white;
+    position: relative;
+  }
+  
+  .card-dark {
+    background-color: #2b2d42; /* Dark background for specific cards */
+    color: white;
+  }
+
+  .card-gray {
+    background-color: #5a5a82; /* Gray background for specific cards */
+    color: white;
+  }
+  
+  .card-light {
+    background-color: #ffffff; /* Light background for specific cards */
+    color: #333;
+  }
+  
+  .testimonial-text {
+    font-size: 0.9em;
+    opacity: 0.5;
+    font-weight: bold;
+    line-height: 1.6;
+    overflow-wrap: break-word; /* Prevent text from overflowing */
+  }
+  
+  img.rounded-circle {
+    border: 2px solid white;
+  }
+  
+  /* Quotation Background Image */
+  .card-purple::before {
+    content: url('./images/bg-pattern-quotation.svg');
+    position: absolute;
+    top: 1px;
+    right: 125px;
+    opacity: 0.5;
+    width: 40px; 
+    height: 40px;
+  }
+  
+  .closer {
+    font-size: large;
+    text-align: center;
+  }
